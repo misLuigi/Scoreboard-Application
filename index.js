@@ -55,3 +55,14 @@ guestPlusThreeBtn.addEventListener("click", function guestAddThree() {
   scoreGuest.textContent = guestScore += 3;
 })
 
+// New game button
+
+const newGame = document.getElementById("newGameBtn");
+console.log(newGame);
+
+newGame.addEventListener("click", function newGameZero() {
+  homeScore = 0;
+  guestScore = 0;
+  scoreHome.textContent = homeScore;
+  scoreGuest.textContent = guestScore;
+})

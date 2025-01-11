@@ -7,12 +7,12 @@ body {
   background-color: aliceblue;
 }
 
-/*@font-face {
+@font-face {
   font-family: CursedTimerUlil;
   src: url(./font/cursed-timer-ulil-font/CursedTimerUlil-Aznm.ttf);
-}*/
+}
 
-/*h1 {
+h1 {
   font-family: Arial, Helvetica, sans-serif;
   color: whitesmoke;
 }
@@ -38,4 +38,10 @@ body {
   font-family: CursedTimerUlil;
   color: #F94F6D;
   font-size: 90px;
-}*/
+}
+
+#guest-score-display {
+  font-family: CursedTimerUlil;
+  color: #F94F6D;
+  font-size: 90px;
+}
