@@ -66,3 +66,24 @@ newGame.addEventListener("click", function newGameZero() {
   scoreHome.textContent = homeScore;
   scoreGuest.textContent = guestScore;
 })
+
+const timerEl = document.getElementById("timer");
+console.log(timerEl);
+
+//set the timer to work
+const startTimer = ;
+let timer = startTimer * 60;
+
+function countDown() {
+  const minutes = Math.floor(timer / 60);
+  let seconds = timer % 60;
+
+  timerEl.innerHTML = `${minutes}:${seconds}`;
+  timer--;
+}
+
+setInterval(countDown, 1000);
+
+if (timer > 0) {
+  timerEl.innerHTML = "Time is up!"
+}

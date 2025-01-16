@@ -1,10 +1,9 @@
 body {
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  margin-top: 100px;
-  background-color: aliceblue;
+  background-color: rgb(137, 195, 247);
+  display: block;
+
 }
 
 @font-face {
@@ -12,36 +11,89 @@ body {
   src: url(./font/cursed-timer-ulil-font/CursedTimerUlil-Aznm.ttf);
 }
 
-h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  color: whitesmoke;
+@keyframes runningText {
+  0%  { transform: translate(0, 0); }
+  100% {transform: translate(-100%, 0); }
 }
 
-.board-container {
-  background-color: #1B244A;
-  width: 575px;
-  height: 385px;
-  display: flex;
-  justify-content: space-around;
-}
-
-.lcd-display {
-  width: 155px;
-  height: 120px;
+/*.text-animation-section {
+  display: block;
+  flex-direction: row;
   background-color: black;
+  width: 100%;
+  height: 50px;
+}
+
+.text-animation {
+  display: inline-block;
+  color: #F94F6D;
+  font-family: CursedTimeUlil;
+  font-size: bold;
+  animation: runningText 15s linear infinite;
+}*/
+
+.big-box-display {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#home-score-display {
-  font-family: CursedTimerUlil;
-  color: #F94F6D;
-  font-size: 90px;
+.board-container {
+  background-color: #1B244A;
+  max-width: 575px;
+  margin-inline: auto;
+  margin-top: 200px;
+  border-radius: 10px;
 }
 
-#guest-score-display {
-  font-family: CursedTimerUlil;
-  color: #F94F6D;
-  font-size: 90px;
+.title {
+  display: flex;
+  justify-content: space-around;
+  color: aliceblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 50px;
 }
+
+.home-lcd-panel {
+  background-color: black;
+  width: 155px;
+  height: 120px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+
+.lcd-display {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+.score-display {
+  font-family: CursedTimerUlil;
+  color: #d0183a;
+  font-size: 90px;
+  font-weight: 400;
+  line-height: 126.67px;
+}
+.btn-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 10px;
+
+}
+
+button {
+  background-color: #1B244A;
+  color: #9AABD8;
+  border: 1px solid #9AABD8;
+}
+
+.button {
+  width: 45px;
+  height: 45px;
+}*/
