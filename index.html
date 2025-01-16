@@ -7,38 +7,37 @@
   <title>Scoreboard</title>
 </head>
 <body>
+  <div class="text-animation-section">
+    <p class="text-animation">New Game Started | Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum iste, harum non accusantium, quas fugit possimus fuga eaque cupiditate placeat iure. Ipsam incidunt vel quae a quisquam labore assumenda magni?</p>
+  </div>
   <div class="board-container">
 
     <div id="timer"></div>
 
     <div class="title">
       <h1>HOME</h1>
-      <h1>GUEST</h1>
+      <div class="lcd-display">
+        <p id="home-score-display">0</p>
+      </div>
+      <div class="btn-container">
+        <button id="home-add-pts-btn1">+1</button>
+        <button id="home-add-pts-btn2">+2</button>
+        <button id="home-add-pts-btn3">+3</button>
+      </div>
     </div>
-
-      <div class="big-box-dispay">
-        
-          <div class="home-lcd-display">
-            <div class="lcd-panel">
-              <p class="score-display" id="home-score-display">0</p>
-            </div>
-            <div id="home-btn-container">
-              <button class="button" id="home-add-pts-btn1">+1</button>
-              <button class="button" id="home-add-pts-btn2">+2</button>
-              <button class="button" id="home-add-pts-btn3">+3</button>
-            </div>
-          </div>
+    <div class="midBtns">
+      <button class="buttons" id="newGameBtn">New Game</button>
       
-          <div class="guest-lcd-display">
-            <div class="lcd-panel">
-              <p class="score-display" id="guest-score-display">0</p>
-              <div id="guest-btn-container">
-                <button class="button" id="guest-add-pts-btn1">+1</button>
-                <button class="button" id="guest-add-pts-btn2">+2</button>
-                <button class="button" id="guest-add-pts-btn3">+3</button>
-              </div>
-            </div>
-          </div>
+    </div>
+    <div class="title">
+      <h1>GUEST</h1>
+      <div class="lcd-display">
+        <p id="guest-score-display">0</p>
+      </div>
+      <div class="btn-container">
+        <button id="guest-add-pts-btn1">+1</button>
+        <button id="guest-add-pts-btn2">+2</button>
+        <button id="guest-add-pts-btn3">+3</button>
       </div>
       
         <div class="midBtns">
